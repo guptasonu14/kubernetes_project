@@ -2,7 +2,7 @@ FROM centos:latest
 MAINTAINER sguptabudha@gmail.com
 
 # Install Apache, zip, and unzip
-RUN yum install -y httpd zip unzip
+RUN apt-get install -y httpd zip unzip
 
 # Add the website template ZIP file to the container
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page254/photogenic.zip /var/www/html/
