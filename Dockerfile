@@ -16,8 +16,9 @@ RUN rm -rf photogenic photogenic.zip
 # Start Apache server
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 
-# Expose ports
+# Expose port for HTTP access
 EXPOSE 80 22
+
 
 
 # FROM centos:latest
